@@ -1,0 +1,35 @@
+#outer_body{
+  height: 400px;
+  width: 150px;
+  border: 3.5px solid black;
+  margin: 110px 0px 0px 680px;
+}
+
+
+#body{
+  border: 3.5px solid black;
+  height: 380px;
+  width: 125px;
+  margin: 8px;
+}
+
+.light{
+  border: 3.5px solid black;
+  height: 90px;
+  width: 90px;
+  margin: 16px;
+  margin-top: 26px;
+  border-radius: 50%;
+}
+
+#red{
+  background-color: red;
+}
+
+#yellow{
+  background-color: yellow;
+}
+
+#green{
+  background-color: green;
+}

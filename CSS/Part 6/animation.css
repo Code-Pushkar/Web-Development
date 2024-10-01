@@ -1,0 +1,43 @@
+#container{
+  height: 130px;
+  width: 300px;
+  text-align: center;
+  background-color: burlywood;
+
+  /* animation-name: fontAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+
+  animation: myAnimation 2s ease-in-out 0s infinite alternate;
+
+  /* animation: widthAnimation 2s ease-in infinite alternate; */
+
+}
+
+@keyframes myAnimation{
+  from{
+    font-size: 16px;
+    width: 75px;
+    background-color: burlywood;
+    height: 130px;
+  }
+  to{
+    font-size: 60px;
+    width: 300px;
+    background-color: chocolate;
+    height: 90px;
+    border-radius: 20px;
+  }
+}
+
+@keyframes widthAnimation{
+  from{
+    width: 300px;
+  }
+  to{
+    width: 600px;
+  }
+}

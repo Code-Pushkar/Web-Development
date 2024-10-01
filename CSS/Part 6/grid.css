@@ -1,0 +1,17 @@
+.container{
+  border: 2px solid red;
+  width: 80%;
+  height: 700px;
+  margin: auto;
+  background-color: rgb(95, 99, 102);
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+}
+
+.item{
+  border: 2px solid black;
+  background-color: burlywood;
+  width: 100px;
+  height: 70px;
+  text-align: center;
+}

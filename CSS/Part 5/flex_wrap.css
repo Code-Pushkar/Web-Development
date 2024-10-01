@@ -1,0 +1,48 @@
+#box1{
+  background-color: violet;
+}
+
+#box2{
+  background-color: indigo;
+}
+
+#box3{
+  background-color: blue;
+}
+
+#box4{
+  background-color: green;
+}
+
+#box5{
+  background-color: yellow;
+}
+
+#box6{
+  background-color: orange;
+}
+
+#box7{
+  background-color: red;
+}
+
+#container div{
+  text-align: center;
+  height: 150px;
+  width: 200px;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+#container{
+  border: 2px solid black;
+  height: 500px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  flex-wrap: wrap-reverse;
+}

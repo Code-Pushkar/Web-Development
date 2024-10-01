@@ -1,0 +1,45 @@
+.color{
+  background-color: aqua;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+#header{
+  height: 55px;
+}
+
+#section{
+  display: flex;
+  height: 550px;
+}
+
+#sidebar{
+  width: 20%;
+  margin: 10px;
+}
+
+#middlePart{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 10px;
+}
+
+#navigation{
+  height: 40px;
+  margin: 10px;
+}
+
+#main{
+  height: 510px;
+  margin: 10px;
+}
+
+#ads{
+  width: 20%;
+  margin: 10px;
+}
+
+#footer{
+  height: 55px;
+}
