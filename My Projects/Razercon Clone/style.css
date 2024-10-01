@@ -1,0 +1,805 @@
+@font-face {
+  font-family: Razer regular;
+  src: url(./Assets/RazerF5-Reg.otf);
+}
+@font-face {
+  font-family: Razer-Bold;
+  src: url(./Assets/RazerF5-Bold.otf);
+}
+@font-face {
+  font-family: Razer-semiBold;
+  src: url(./Assets/razerf5-semibold.otf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Razer regular;
+  box-sizing: border-box;
+}
+
+/* Header */
+header{
+  border-bottom: 1px solid #44d62c;
+  height: 16.5vh;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* 1st Header */
+#header-1{
+  background-color: black;
+  height: 51%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header-1 #nav #logo{
+  height: 5vh;
+  width: 2.4vw;
+  padding: 0;
+  margin-right: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#header-1 #nav ul{
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 100;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+#header-1 #nav ul li{
+  padding: 19px;
+}
+.underline{
+  border-bottom: 1px solid transparent;
+  transition: color  0.1s linear;
+  transition: border-bottom  0.1s linear;
+}
+.underline:hover{
+  border-bottom: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+#search i{
+  transition: color 0.2s linear;
+}
+#search i:hover{
+  color: white;
+  cursor: pointer;
+}
+#cart i{
+  transition: color 0.2s linear;
+}
+#cart i:hover{
+  color: white;
+  cursor: pointer;
+}
+
+/* 2nd Header */
+#header-2{
+  height: 49%;
+  width: 100%;
+  background-color: #101010;
+  position: relative;
+}
+#razercon{
+  height: 100%;
+  width: fit-content;
+  color: white;
+  padding: 20px 0;
+  position: absolute;
+  left: 155px;
+  font-size: 15px;
+}
+#menu-list{
+  height: 100%;
+  width: fit-content;
+  position: absolute;
+  right: 180px;
+}
+#menu-list ul{
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 15px;
+  list-style: none;
+  display: flex;
+  padding: 20px 0;
+  gap: 30px;
+}
+#menu-list .menu{
+  transition: color 0.2s linear;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+#menu-list .menu:hover{
+  color: #44d62c;
+  cursor: pointer;
+}
+
+/* Notification */
+#notification{
+  background-color: #555555;
+  height: 6vh;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+#notification a{
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+#notification a:hover{
+  text-decoration: underline;
+}
+
+/* Page 1 */
+#page1{
+  height: 150vh;
+  width: 100% ;
+  background-image: url(./Assets/razercon-2024-hero.webp);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#in-page1{
+  width: fit-content;
+  height: 42%;
+  text-align: center;
+}
+#in-page1 h1{
+  color: #44d62c;
+  font-family: "Razer-Bold", sans-serif;
+  font-weight: 900;
+  font-size: 4.4rem;
+  margin-bottom: 5px;
+}
+#in-page1 h2{
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+#in-page1 button{
+  font-family: Razer-Bold, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  background-color: #44d62c;
+  margin-top: 30px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.2s linear;
+}
+#in-page1 button:hover{
+  cursor: pointer;
+  background-color: #73E161;
+}
+
+/* Page 2 */
+#page2{
+  background-color: #44D62C;
+  height: 66vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#page2 h1{
+  font-family: Razer-Bold;
+  font-size: 2.9rem;
+  margin: 30px;
+}
+#page2 h2{
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+#page2 #time{
+  font-family: Razer-Bold;
+  font-size: 4.5rem;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+#page2 #date{
+  font-family: Razer-Bold;
+  font-size: 1.9rem;
+  display: flex;
+  align-items: center;
+}
+#page2 #date #calendar{
+  font-size: 2.7rem;
+}
+#page2 #d-day{
+  font-family: Razer-semiBold;
+  font-size: 1.1rem;
+  position: absolute;
+  bottom: 67px;
+  right: 315px;
+  color: #44D62C;
+}
+#page2 #date-and-time{
+  height: fit-content;
+  width: fit-content;
+}
+#page2 #date-and-time:hover ~ #d-day{
+  color: black;
+}
+
+/* Page 3 */
+#page3{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: black;
+  padding-top: 90px;
+  flex-wrap: wrap;
+}
+#page3 .card{
+  min-height: 410px;
+  width: fit-content;
+  margin: 0 15px;
+  text-align: center;
+  
+}
+#page3 .card img{
+  margin-bottom: 10px;
+}
+#page3 .card .time{
+  font-family: Razer-Bold;
+  color: white;
+}
+#page3 .card .event{
+  font-family: Razer-Bold;
+  color: #44D62C;
+  margin-bottom: 15px;
+}
+#page3 .card .text{
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.15rem;
+  line-height: 25px;
+}
+
+/* Page 4 */
+#page4{
+  border: 2px solid black;
+  width: 100%;
+  height: 72vh;
+  background-color: black;
+  background-image: url(./Assets/razercon-2024-usp-blade.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:bottom;
+  text-align: center;
+}
+#page4 #blade{
+  color: #44D62C;
+  font-family: Razer-bold;
+  font-size: 3rem;
+  margin-top: 55px;
+}
+#page4 #win{
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 65px;
+}
+
+/* Page 5 */
+#page5{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+#page5 form{
+  border: 1px solid yellow;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  width: 37%;
+  height: 60vh;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+#page5 form::before{
+  content: "* Required fields";
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+#page5 .inputs{
+  margin: 10px 0px;
+  height: 12%;
+  width: 100%;
+  background-color: #111111;
+  border: 1px solid #868686;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+#page5 #f-name{
+  margin-top: 35px;
+}
+#page5 .inputs::placeholder{
+  padding-left: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+#page5 #region{
+  padding-left: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #868686;
+}
+#page5 #pp{
+  color: white;
+}
+#page5 #pp input{
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+/* Page 6 */
+#page6{
+  width: 100%;
+  height: 300vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+#page6>h1{
+  color: #44D62C;
+  font-size: 2.9rem;
+  font-family: Razer-Bold;
+  margin-top: 60px;
+}
+#page6 p{
+  color: rgba(255, 255, 255, 0.587);
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  line-height: 25px;
+}
+#page6 #giveaway{
+  width: 71%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+#giveaway .give-cards{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 85px;
+}
+#giveaway .give-cards .give{
+  width: 46%;
+  text-align: center;
+}
+#giveaway .give-cards .give img{
+  width: 100%;
+}
+#giveaway .give-cards .give h1{
+  color: #44D62C;
+  font-size: 2.2rem;
+  font-family: Razer-Bold;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+#giveaway .give-cards .give h3{
+  color: rgba(255, 255, 255, 0.587);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+/* Page 7 */
+#page7{
+  border: 2px solid black;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+#page7>h1{
+  color: #44D62C;
+  font-size: 2.9rem;
+  font-family: Razer-Bold;
+  margin-top: 85px;
+  margin-bottom: 55px;
+}
+#page7 .img-box{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+#page7 .img-box img{
+  margin: 0 10px;
+}
+#page7 .img-box div{
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+}
+
+/* Page 8 */
+#page8{
+  border: 2px solid black;
+  width: 100%;
+  height: 75vh;
+  text-align: center;
+  background-color: black;
+}
+#page8>h1{
+  color: #44D62C;
+  font-size: 2.9rem;
+  font-family: Razer-Bold;
+  margin-top: 15px;
+}
+#page8 p{
+  color: rgba(255, 255, 255, 0.587);
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+}
+#page8>h3{
+  color: rgba(255, 255, 255, 0.587);
+  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  margin-top: 30px;
+}
+#page8 #bonus-box{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#page8 #bonus-box .bonus{
+  height: 100%;
+  width: 25% ;
+}
+#page8 #bonus-box .bonus img{
+  width: 80%;
+  margin-top: 15px;
+}
+#page8 #bonus-box .bonus h2{
+  color: #44D62C;
+  font-size: 2.2rem;
+  font-family: Razer-Bold;
+  text-transform: uppercase;
+}
+#page8 #bonus-box .bonus h1{
+  color: #fff;
+  font-size: 2.2rem;
+  font-family: Razer-Bold;
+}
+#page8 #bonus-box .bonus h3{
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  font-weight: 200;
+}
+
+/* Page 9 */
+#page9{
+  background-color: black;
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  border: 2px solid black;
+}
+#page9 h1{
+  color: #44D62C;
+  font-size: 2.9rem;
+  font-family: Razer-Bold;
+  margin-top: 30px;
+}
+#page9 h2{
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+#page9 video{
+  width: 100%;
+  height: 55%;
+}
+#page9 #video{
+  width: 100%;
+  position: relative;
+}
+#page9 #video i{
+  color: #44d62c;
+  position: absolute;
+  z-index: 20;
+  right: 15px;
+  bottom: 30px;
+}
+
+/* Page 10 */
+#page10{
+  border: 1px solid black;
+  background-color: black;
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+}
+#page10 h1{
+  color: #44D62C;
+  font-size: 2.9rem;
+  font-family: Razer-Bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#page10 #silver-box{
+  border: 1px solid black;
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+}
+#page10 #silver-box .silver-card{
+  border: 1px solid black;
+  height: 100%;
+  width: 25%;
+  margin: 0 5px;
+  text-align: center;
+}
+#page10 #silver-box .silver-card img{
+  width: 33%;
+}
+#page10 #silver-box .silver-card h2{
+  text-transform: uppercase;
+  color: #44D62C;
+  font-size: 1.5rem;
+  font-family: Razer-Bold;
+  line-height: 25px;
+  margin-top: 15px;
+}
+#page10 #silver-box .silver-card p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  margin-top: 15px;
+  line-height: 22px;
+}
+#page10 #silver-box .silver-card a{
+  color: #44D62C;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+#page10 #silver-box .silver-card h4{
+  margin-top: 25px;
+}
+
+/* Page 11 */
+#page11{
+  border: 2px solid black;
+  background-color: black;
+  width: 100%;
+  height: 103vh;
+  background-image: url(./Assets/razer-gold-promotion-desktop.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 65%;
+  text-align: center;
+}
+#page11 h1{
+  color: #44D62C;
+  font-size: 2.9rem;
+  font-family: Razer-Bold;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+#page11 h2{
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+}
+#page11 a{
+  color: #44D62C;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+/* Page 12 */
+#page12{
+  border: 2px solid #222222;
+  background-color: #222222;
+  width: 100%;
+  height: 40vh;
+  color: white;
+  padding-left: 12%;
+  padding-top: 2%;
+}
+#page12 h5{
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+#page12 ul{
+  margin: 15px;
+  font-size: 0.8rem;
+  line-height: 19px;
+  color: rgb(135, 135, 135);
+}
+#page12 ul li{
+  list-style-type: decimal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+/* Page 13 */
+#page13{
+  border: 2px solid black;
+  background-color: black;
+  width: 100%;
+  height: 58vh;
+  text-align: center;
+}
+#page13 h1{
+  color: #44D62C;
+  font-size: 2.9rem;
+  font-family: Razer-Bold;
+  margin-top: 95px;
+  margin-bottom: 60px;
+}
+#page13 img{
+  margin: 0 65px;
+}
+
+/* Footer */
+#footer{
+  border: 2px solid #111111;
+  background-color: #111111;
+  width: 100%;
+  height: 56vh;
+  padding-right: 12%;
+  padding-left: 10%;
+}
+#footer #links-box{
+  border-bottom: 1px solid #555555;
+  height: 85%;
+  padding-top: 15px;
+  display: flex;
+  position: relative;
+}
+#footer #links-box h3{
+  color: #44D62C;
+  font-family: Razer regular;
+  font-weight: 100;
+  font-size: 0.95rem;
+  position: absolute;
+  right: 10px;
+  top: 23px;
+}
+#footer h4{
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 0.7rem;
+  margin-bottom: 7px;
+  margin-top: 5px;
+  margin-right: 145px;
+} 
+#footer #links-box ul{
+  list-style: none;
+}
+#footer #links-box ul li a {
+  text-decoration: none;
+  color: rgb(135, 135, 135);
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 0.75rem;
+  line-height: 30px;
+}
+#footer #links-box ul li a:hover{
+  color: white;
+  text-decoration: underline;
+}
+#footer #links-box ul .social{
+  height: 35px;
+}
+#footer #links-box ul li a img{
+  height: 27px;
+}
+#footer #copy-box{
+  height: 15%;
+  padding-top: 15px;
+  display: flex;
+}
+#footer #copy-box #copyright{
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 0.75rem;
+  color: rgb(150, 150, 150);
+}
+#footer #copy-box ul{
+  display: flex;
+  list-style-type: none;
+  margin-left: 15px;
+}
+#footer #copy-box ul li{
+  display: flex;
+  padding: 0 20px;
+  border-left: 1px solid #848484;
+  height: 15px;
+}
+#footer #copy-box ul li:nth-of-type(1){
+  border: none;
+}
+#footer #copy-box ul li a{
+  text-decoration: none;
+  color: rgb(135, 135, 135);
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 0.75rem;
+}
+#footer #copy-box ul li a:hover{
+  color: white;
+  text-decoration: underline;
+}
+#footer #copy-box h6{
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 0.75rem;
+  color: white;
+  padding-right: 6px;
+  padding-left: 285px;
+
+}
+#footer #copy-box #location{
+  text-decoration: none;
+  color: rgb(135, 135, 135);
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 0.75rem;
+  padding: 0 6px;
+  height: 15px;
+  border-left: 1px solid white;
+}
+#footer #copy-box #location:hover{
+  color: white;
+  text-decoration: underline;
+}
