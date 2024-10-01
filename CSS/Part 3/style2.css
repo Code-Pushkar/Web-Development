@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .box{
   height: 200px;
   width: 200px;
@@ -9,4 +10,17 @@
 
 #second{
   display: none;
+=======
+.box{
+  height: 200px;
+  width: 200px;
+  background-color: greenyellow;
+  border: 2px solid red;
+  margin: 5px;
+  display: inline-block;
+}
+
+#second{
+  display: none;
+>>>>>>> c70566e (Add all files and folders)
 }

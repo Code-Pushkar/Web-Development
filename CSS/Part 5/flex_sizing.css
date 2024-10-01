@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #box1{
   background-color: violet;
 }
@@ -52,4 +53,60 @@
   /* flex-wrap: wrap; */
   /* align-items: center; */
   /* align-content: space-evenly; */
+=======
+#box1{
+  background-color: violet;
+}
+
+#box2{
+  background-color: indigo;
+}
+
+#box3{
+  background-color: blue;
+}
+
+#box4{
+  background-color: green;
+  /* flex-grow: 1; */
+  flex-shrink: 4;
+}
+
+#box5{
+  background-color: yellow;
+}
+
+#container #box6{
+  background-color: orange;
+  /* flex-basis: 250px; */
+  /* flex-grow: 3; */
+  flex-shrink: 2;
+}
+
+#box7{
+  background-color: red;
+}
+
+#container div{
+  text-align: center;
+  height: 175px;
+  width: 275px;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+#container{
+  border: 2px solid black;
+  height: 600px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  /* align-content: space-evenly; */
+>>>>>>> c70566e (Add all files and folders)
 }

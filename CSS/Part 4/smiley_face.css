@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #face{
   background-color: rgb(236, 164, 32);
   height: 400px;
@@ -35,4 +36,43 @@
   left: 100px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+=======
+#face{
+  background-color: rgb(236, 164, 32);
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+.eyes{
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  border-radius: 50%;
+
+}
+
+#eye1{
+  position: relative;
+  left: 100px;
+  top: 90px;
+}
+
+#eye2{
+  position: relative;
+  left: 190px;
+  top: 90px;
+}
+
+#mouth{
+  background-color: rgb(183, 46, 69);
+  height: 65px;
+  width: 200px;
+  position: relative;
+  top: 205px;
+  left: 100px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+>>>>>>> c70566e (Add all files and folders)
 }

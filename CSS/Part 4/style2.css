@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .card{
   width: 200px;
   /* height: 200px; */
@@ -24,4 +25,32 @@ img{
 
 .desc{
   text-align: center;
+=======
+.card{
+  width: 200px;
+  /* height: 200px; */
+  /* border: 2px solid black; */
+  display: inline-block;
+  border-radius: 20px;
+  margin: 15px;
+  box-shadow: 0px 7px 15px black;
+  transition: 0.5s;
+}
+
+.card:hover{
+  /* box-shadow: 0px 12px 20px 3px black; */
+  box-shadow: 0px 14px 25px black;
+
+}
+
+img{
+  width: 100%;
+  border-top-right-radius: inherit ;
+  border-top-left-radius: inherit ;
+  background-color: rgb(246, 246, 246);
+}
+
+.desc{
+  text-align: center;
+>>>>>>> c70566e (Add all files and folders)
 }
